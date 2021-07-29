@@ -1,0 +1,439 @@
+
+/* var */
+:root{
+    --blue:#08526d;
+    --red: #ec1c23;
+    --black:#2c3137;
+    --offWhite:#bfc6c9;
+}
+/*<<<<<<<<<<<<<<<Upper-Bar>>>>>>>>>>>>>>>>>*/
+.upper-bar{
+    background-color:var(--blue) ;
+    color:#fff;
+    padding:10px;
+}
+.upper-bar span{
+    color:var(--offWhite);
+}
+.upper-bar span.get-quote{
+    display:inline-block;
+    border:1px solid var(--red);
+    padding: 2px 10px;
+    margin-left: 20px;
+}
+/*<<<<<<<<<<<<<<<End-Upper-Bar>>>>>>>>>>>>>>>>>*/
+
+/*<<<<<<<<<<<<<<<navbar>>>>>>>>>>>>>>>>>*/
+.navbar-light .navbar-brand>span{
+    font-size: 40px;
+}
+ .navbar-light .navbar-brand span:first-child{
+     color:var(--blue);
+     font-weight:bold;
+ }
+ .navbar-light .navbar-brand span:last-child{
+     color:var(--red);
+     font-weight: 300;
+ }
+ .navbar-light .navbar-nav  .nav-link{
+     color:var(--blue);
+     font-size: 1.1rem;
+     text-transform: uppercase;
+ }
+.navbar-light .navbar-nav .active>.nav-link{
+    color: var(--red);
+}
+/*<<<<<<<<<<<<<<<End-navbar>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<Slider>>>>>>>>>>>>>>>>>*/
+.slider .carousel .carousel-inner .carousel-item{
+    background-size:cover;
+}
+.slider .carousel .carousel-inner .carousel-one{
+    background-image:url('../images/slider-01.png');
+}
+.slider .carousel .carousel-inner .carousel-two{
+    background-image:url('../images/slider-1.jpg');
+}
+.slider .carousel .carousel-inner .carousel-three{
+    background-image:url('../images/slider-2.jpg');
+}
+.slider .carousel .carousel-inner {
+    position: relative;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+}
+.slider .carousel .carousel-inner .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 2;
+}
+.slider .carousel .carousel-inner h1{
+    position:absolute;
+    color: #fff;
+    left: 5rem;
+    z-index: 3;
+    line-height: 1.5;
+    font-size: 4.5rem;
+}
+.slider .carousel .carousel-inner h1 span{
+    display: inline-block;
+    background-color: var(--red);
+    border-radius: 4px;
+    padding:3px 10px
+}
+.slider .carousel ol.carousel-indicators li{
+    width: .7rem;
+    height: .7rem;
+    border-radius: 50%;
+    } 
+/*<<<<<<<<<<<<<<<End-Slider>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<Features>>>>>>>>>>>>>>>>>*/
+.features{
+    margin:5rem 0;
+}
+.features  i{
+    background-color:var(--red);
+    color: #fff; 
+    padding:1.2rem 1.3rem;
+}
+.features h3{
+    color:var(--blue);
+}
+.features p{
+    color: #888;
+    margin-bottom: 2rem;
+}
+/*<<<<<<<<<<<<<<<End-Features>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<Overview>>>>>>>>>>>>>>>>>*/
+.overview{
+    background-color: rgba(238, 238, 238, 0.6);
+    padding: 8rem;
+}
+.overview h2{
+    font-size:2.8rem;
+    font-weight:bold;
+}
+.overview p{
+    line-height:2;
+    font-size: 1.2rem;
+    color: #777;
+}
+.overview h4{
+    margin: 2rem auto;
+    letter-spacing: .3rem;
+    font-weight:300;
+    color: #777;
+}
+
+/*<<<<<<<<<<<<<<<End-Overview>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<Featured-Work>>>>>>>>>>>>>>>>>*/
+.featured-work{
+    margin:2rem auto;
+}
+.featured-work h2{
+    font-size:2.5rem;
+    margin-bottom: 2rem;
+}
+.featured-work p{
+    font-size:1.2rem;
+    line-height:1.6 ;
+    margin-bottom: 2rem;
+    color:#777;
+    width: 80%;
+}
+.featured-work ul li{
+    border: 1px solid var(--blue);
+    color:var(--blue);
+    margin:1.5rem .5rem;
+    font-size: 1.1rem;
+    padding: .2rem .5rem;
+    text-transform:uppercase;
+    border-radius:5px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+.featured-work ul li.active,.featured-work ul li:hover{
+    background-color:var(--red);
+    border-color:var(--red) ;
+    color:#fff;
+}
+.featured-work .shuffle-image .col-md-3{
+    padding: 0;
+    margin: 0;
+}
+.featured-work .shuffle-image .col-md-3 img{
+    height:340px;
+    width: 100%;
+}
+/*<<<<<<<<<<<<<<<End-Featured-Work>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<-------------------------->>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<Lastest-Post>>>>>>>>>>>>>>>>>*/
+    .latest-post{
+        padding: 6.5rem;
+    }
+    .latest-post h2{
+        font-size:3.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .latest-post p{
+        line-height:1.5;
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+        color: #777;
+        width: 80%;
+    }
+    .latest-post .row .col-md-4 .card .card-body .card-title{
+        color: var(--blue);
+    }   
+    .latest-post .row .col-md-4 .card .card-body .card-link{
+        display: inline-block;
+        color:var(--red);
+        position:relative;
+        font-weight:bold;
+        transition:color .4s ease-in-out;
+    }
+    .latest-post .row .card .card-body .card-link::after{
+        content:'';
+        position: absolute;
+        width: 0;
+        height:.4rem;
+        background-color: var(--blue);
+        top:1.5rem;
+        left: 0;
+        border-radius:3px;
+        transition:width .4s ease-in-out;
+    }
+    .latest-post .row .card .card-body .card-link:hover{color:var(--blue);}
+    .latest-post .row .card .card-body .card-link:hover::after{width: 65%;}
+
+/*<<<<<<<<<<<<<<<End-Lastest-Post>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<Testimonials>>>>>>>>>>>>>>>>>*/
+    .testimonials{
+        background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('../images/testimonial-bg.png');
+    }
+    .testimonials .carousel .carousel-inner .carousel-caption{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .testimonials .carousel .carousel-inner .carousel-caption img{
+        margin-bottom: 1.5rem;
+    }
+    .testimonials .carousel .carousel-inner .carousel-caption h4  {
+        font-size:1.7rem;
+    }
+    .testimonials .carousel .carousel-inner .carousel-caption span{
+        display: block;
+        font-size: 1.6rem;
+        margin-bottom: 2.5rem;
+    }
+    .testimonials .carousel .carousel-indicators li{
+        width: .7rem;
+        height: .7rem;
+        border-radius: 50%;
+    }
+/*<<<<<<<<<<<<<<<End-Testimonials>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<Pricing>>>>>>>>>>>>>>>>>*/
+.pricing {
+    margin:7rem auto;
+}
+.pricing h2{
+    font-size : 3rem;
+    margin-bottom: 1.2rem; ;
+}
+.pricing p{
+    color: #777;
+    line-height: 1.7;
+    font-size: 1.2rem;
+    margin-bottom: 6rem;
+}
+.pricing  .card h3{
+    margin: 3rem auto 0;
+    color:var(--blue);
+}
+.pricing .card h3+p{
+    margin: 0 auto;
+}
+.pricing .card .price{
+    background-color: #f7f3f3;
+    font-size: 4rem;
+    color: var(--blue) ;
+    text-transform: uppercase;
+}
+.pricing .card .price span{
+    font-size: 2rem;
+}
+.pricing .card p.card-text {
+    margin: 1rem auto;
+} 
+.pricing .card button{
+    background-color: var(--blue);
+    width: 50%;
+    margin: 2rem auto;
+    color:#fff;
+    text-transform: upper;
+}
+.pricing .card.card-two{
+    transform: translateY(-1rem);
+    box-shadow: 1px 1px 25px;
+}
+.pricing .card.card-two .price{
+    background-color: var(--red);
+    color: #fff;
+}
+/*<<<<<<<<<<<<<<<End-Pricing>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<Why-Choose-Us>>>>>>>>>>>>>>>>>*/
+.why-choose{
+    margin:3rem 0;
+    padding: 0;
+}
+.why-choose .row .choose-img{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/man.png') no-repeat  ;
+    background-size:cover;
+    width: 100%;
+}
+.why-choose .row .choose-text{
+    padding:2rem;
+    background-color: var(--blue);
+    color: #fff;
+}
+.why-choose .row .choose-text h2{
+    margin: 3rem auto ;
+    font-size: 3rem;
+}
+.why-choose .row .choose-text p{
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 5rem;
+}
+.why-choose .row .choose-text button{
+    margin-bottom: 3rem;
+    margin-left: 1.5rem;
+    padding: .8rem 1.5rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+
+}
+/*<<<<<<<<<<<<<<<End-Why-Choose-Us>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<Statistics>>>>>>>>>>>>>>>>>*/
+.statistics{
+    margin: 5rem auto;
+}
+.statistics .row .col-md-3 i{ 
+    color: var(--blue);
+    margin-bottom: .5rem;
+}
+.statistics .row .col-md-3 span{
+    color: var(--blue);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.statistics .row .col-md-3 p{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color:var(--red)
+}
+/*<<<<<<<<<<<<<<<End-Statistics>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<Contact-Us>>>>>>>>>>>>>>>>>*/
+.contact-us{
+    background-color: var(--red); 
+    padding: 6rem 0;
+}
+.contact-us h2{
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 100;
+
+}
+.contact-us button{
+    border:1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+}
+.contact-us button:hover{
+    color: var(--offWhite);
+    border-color:var(--offWhite); 
+}
+/*<<<<<<<<<<<<<<<End-Contact-Us>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<Footer>>>>>>>>>>>>>>>>>*/
+.footer{  
+    background-color: #f7f7f7;
+}
+.footer .container-fluid{padding: 6rem;}
+.footer  h2{
+    color: var(--blue);
+    font-size: 2.8rem;
+    margin-bottom: 2rem;  
+}
+.footer .container-fluid .row .description h2 span{
+    color:var(--red);
+    font-weight: 300;
+}
+.footer .container-fluid .row .description p{
+    color: #888;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+.footer .container-fluid .row .description a{
+    padding: 0;
+    color: var(--blue);
+}
+.footer .container-fluid .row .description a:hover {
+    color: var(--red);
+}
+.footer .container-fluid .row  .helpful-links h3{
+    font-size: 1.75rem;
+    margin-bottom: 3rem;
+    color: var(--blue);
+
+}
+.footer .container-fluid .row  .helpful-links .container .row .col ul li{
+    margin-bottom: 1rem;
+}
+.footer .container-fluid .row  .helpful-links .container .row .col ul li a{
+    color: var(--blue);
+
+}
+.footer .container-fluid .row  .helpful-links .container .row .col ul li a:hover{
+    color: var(--red);
+    text-decoration: none;
+}
+.footer .container-fluid .row  .helpful-links .container .row .col ul li a i{
+    color: #888;
+    margin-right: .4rem;
+    font-size: 1.08rem;
+    font-weight: 400;
+}
+.footer .container-fluid .row .contact-footer h3{
+    font-size: 1.75rem;
+    margin-bottom: 3rem;
+    color: var(--blue);
+}
+.footer .container-fluid .row .contact-footer p{
+    color: var(--blue);
+    font-size: 1.1rem;
+    margin-bottom: 3rem ;
+}
+.footer .container-fluid .row .contact-footer p span{
+      color: #888;
+      margin-right:1rem ;
+}
+.lower{
+    margin-top: 6rem;
+    border-top: 1px solid var(--offWhite);
+}
+.lower .container-fluid {
+    padding: 2rem 6rem;
+}
+.lower .container-fluid  .social .social-icon a:hover >i{
+    color: var(--blue);
+    transform: scale(1.5);
+}
+/*<<<<<<<<<<<<<<<End-Footer>>>>>>>>>>>>>>>>>*/
+
